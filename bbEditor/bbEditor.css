@@ -1,0 +1,861 @@
+.bbToolbar
+{
+	position: absolute;
+	background: rgb(30, 32, 39);
+	overflow: hidden;
+	padding: 6px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+    width: 476px;
+    height: 94px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+	z-index: 99;
+}
+.bbToolbar input, .bbToolbar textarea, .bbToolbar keygen, .bbToolbar select, .bbToolbar button
+{
+	font: 12px sans-serif;
+}
+.bb-dialog, .bb-dropdown-menu
+{
+	font-family: sans-serif;
+}
+.bbToolbar .bbToolframe
+{
+	float: left;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	position: relative;
+}
+.bbToolbar .bbToolframe .toolTitle
+{
+	color: rgb(150, 160, 170);
+	font-size: 9px;
+	margin: 2px 0px;
+}
+.bbToolbar .bbToolframe .bbToolFrameBack
+{
+	float: left;
+	background: -webkit-gradient(linear,center top,center bottom,from(rgb(21, 23, 30)), to(rgb(10, 10, 14)));
+	background: -moz-linear-gradient(top, rgb(21, 23, 30), rgb(10, 10, 12));
+	box-shadow: 1px 1px 2px 0px rgba(63, 63, 63, 0.2) inset;
+	border-radius: 4px;
+	position: relative;
+	height: 30px;
+}
+.bbToolbar .bbToolframe .caret
+{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 4px solid rgb(204, 204, 204);
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	position: absolute;
+	right: 8px;
+	top: 13px;
+}
+.bbToolbar .bbToolframe button
+{
+	border: 0;
+	background: transparent;
+	color: rgb(204, 204, 204);
+	height: 30px;
+	line-height: 30px;
+	outline: none;
+	position: relative;
+}
+.bbToolbar .bbToolframe button.bb-button
+{
+	width: 31px;
+	border-right: 1px solid #000;
+	box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.2) inset;
+}
+.bbToolbar .bbToolframe ul
+{
+	outline: none;
+}
+.bbToolbar .bbToolframe button.bb-dropdown
+{
+	border-radius: 4px;
+}
+.bbToolbar .bbToolframe button.bb-dropdown.btn-font-family
+{
+	width: 128px;
+	text-align: left;
+	border-radius: 4px;
+	color: rgb(204, 204, 204);
+}
+.bbToolbar .bbToolframe button.bb-dropdown.btn-font-size
+{
+	width: 68px;
+	text-align: left;
+	border-radius: 4px;
+	background: rgb(22, 24, 31);
+	box-shadow: 0px 0px 1px 1px rgba(19, 19, 25, 1) inset;
+}
+.bbToolbar .bbToolframe button.bb-dropdown.btn-letter-spacing
+{
+	width: 60px;
+	text-align: left;
+	border-radius: 4px;
+	background: rgb(22, 24, 31);
+	box-shadow: 0px 0px 1px 1px rgba(19, 19, 25, 1) inset;
+}
+.bbToolbar .bbToolframe button.bb-dropdown.btn-font-weight
+{
+	width: 60px;
+	text-align: left;
+	border-radius: 4px;
+}
+.bbToolbar .bbToolframe button.bb-dropdown.btn-style
+{
+	width: 60px;
+	text-align: left;
+	border-radius: 4px;
+}
+.bbToolbar .bbToolframe button.bb-dropdown.btn-line-height
+{
+	width: 60px;
+	text-align: left;
+	border-radius: 4px;
+	background: rgb(22, 24, 31);
+	box-shadow: 0px 0px 1px 1px rgba(19, 19, 25, 1) inset;
+}
+.bbToolbar .bbToolframe button.bb-dropdown.btn-format
+{
+	width: 120px;
+	text-align: left;
+	border-radius: 4px;
+}
+.bbToolbar .bbToolframe button i.fa-foreground
+{
+	background-image: url(images/foreground.png);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    left: 7px;
+}
+
+.bbToolbar .bbToolframe button i.fa-background
+{
+	background-image: url(images/background.png);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    left: 7px;
+}
+
+.bbToolbar .bbToolframe button i.fa-bbalign-left
+{
+	background-image: url(images/align_left.png);
+    background-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 8px;
+    left: 8px;
+}
+
+.bbToolbar .bbToolframe button i.fa-bbalign-center
+{
+	background-image: url(images/align_center.png);
+    background-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 8px;
+    left: 8px;
+}
+
+.bbToolbar .bbToolframe button i.fa-bbalign-right
+{
+	background-image: url(images/align_right.png);
+    background-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 8px;
+    left: 8px;
+}
+
+.bbToolbar .bbToolframe button i.fa-bbalign-justify
+{
+	background-image: url(images/align_justify.png);
+    background-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 8px;
+    left: 8px;
+}
+
+.bbToolbar .bbToolframe button i.fa-ltr
+{
+	background-image: url(images/ltr1.png);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    left: 7px;
+}
+.bbToolbar .bbToolframe button i.fa-rtl
+{
+	background-image: url(images/rtl1.png);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    left: 7px;
+}
+
+.bbToolbar .bbToolframe button i.fa-separate
+{
+	background-image: url(images/sep2.png);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    left: 7px;
+}
+
+.bbToolbar .bbToolframe button i.fa-bbtable
+{
+	background-image: url(images/table2.png);
+    background-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 8px;
+    left: 8px;
+}
+
+.bbToolbar .bbToolframe button i.fa-bbundo
+{
+	background-image: url(images/undo2.png);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    left: 7px;
+}
+
+.bbToolbar .bbToolframe button i.fa-bbredo
+{
+	background-image: url(images/redo2.png);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    left: 7px;
+}
+
+.bbToolbar .bbToolframe button.bb-btn-enable i.fa-bbundo
+{
+	background-image: url(images/undo1.png);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    left: 7px;
+}
+
+.bbToolbar .bbToolframe button.bb-btn-enable i.fa-bbredo
+{
+	background-image: url(images/redo1.png);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    left: 7px;
+}
+
+.bbToolbar .bbToolframe button i.fa-bblink
+{
+	background-image: url(images/link1.png);
+    background-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 8px;
+    left: 8px;
+}
+
+.bbToolbar .bbToolframe button i.fa-bbunlink
+{
+	background-image: url(images/unlink1.png);
+    background-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 8px;
+    left: 8px;
+}
+
+.bbToolbar .bbToolframe button.bb-btn-disable i.fa-bblink
+{
+	background-image: url(images/link2.png);
+    background-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 8px;
+    left: 8px;
+}
+
+.bbToolbar .bbToolframe button.bb-btn-disable i.fa-bbunlink
+{
+	background-image: url(images/unlink2.png);
+    background-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 8px;
+    left: 8px;
+}
+
+.bbToolbar .bbToolframe button.bb-selection
+{
+	background: -webkit-gradient(linear,center top,center bottom,from(rgb(12, 14, 21)), to(rgb(52, 54, 60)));
+	background: -moz-linear-gradient(top, rgb(12, 14, 21), rgb(52, 54, 60));
+}
+.bbToolbar .bbToolframe button:first-child
+{
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.bbToolbar .bbToolframe button:last-child
+{
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-right: 0;
+	width: 30px;
+}
+.bbToolbar .bbToolframe button:hover
+{
+	background: -webkit-gradient(linear,center top,center bottom,from(rgb(0, 1, 5)), to(rgb(0, 0, 1)));
+	background: -moz-linear-gradient(top, rgb(0, 1, 5), rgb(0, 0, 1));
+}
+.bbToolbar .bbToolframe button.bb-btn-enable
+{
+	color: #fff;
+}
+.bbToolbar .bbToolframe button.bb-btn-disable
+{
+	color: rgb(102, 102, 102);
+}
+.bbToolbar .bbToolframe button.bb-btn-disable:hover
+{
+	background: transparent;
+}
+
+.bb-dropdown-menu
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgb(22, 24, 31);
+	color: #fff;
+	max-height: 160px;
+	overflow-y: auto;
+	font-size: 12px;
+	display: none;
+	z-index: 102;
+}
+.bb-dropdown-menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.bb-dropdown-menu li
+{
+	white-space: nowrap;
+	line-height: 30px;
+	padding-right: 14px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.bb-dropdown-menu li:hover
+{
+	background: rgb(37, 132, 149);
+}
+.bb-dropdown-menu::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+.bb-dropdown-menu::-webkit-scrollbar-button {
+	background: rgb(22, 24, 31);
+	height: 0px;
+	width: 0px;
+}
+.bb-dropdown-menu::-webkit-scrollbar-track-piece {
+	background: rgb(22, 24, 31);
+}
+.bb-dropdown-menu::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+}
+div:focus
+{
+	outline: none;
+}
+
+.bb-color-picker
+{
+	position: absolute;
+	width: 212px;
+	height: 174px;
+	z-index: 999;
+	overflow: hidden;
+	background-color: rgb(30, 32, 39);
+	box-sizing: border-box;
+	padding: 5px;
+	box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+	display: none;
+}
+.bb-pre-color-panel
+{
+	width: calc(100% + 2px);
+	height: 50px;
+	margin-bottom: 10px;
+	margin-left: -1px;
+	margin-top: -1px;
+}
+.bb-color-picker-panel1
+{
+	width: 100px;
+	height: 100px;
+	float: left;
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(#fff), to(rgba(0, 0, 0, 0)));
+	background: -webkit-linear-gradient(left, #fff, rgba(0, 0, 0, 0));
+	background: linear-gradient(to right, #fff, rgba(0, 0, 0, 0));
+}
+.bb-color-picker-panel2
+{
+	width: 100px;
+	height: 100px;
+	float: left;
+	background: -webkit-gradient(linear, 0 100%, 0 0, from(#000), to(rgba(0, 0, 0, 0)));
+	background: -webkit-linear-gradient(bottom, #000, rgba(0, 0, 0, 0));
+	background: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+	position: relative;
+	cursor: pointer;
+}
+.bb-color-picker-background
+{
+	width: 100px;
+	height: 100px;
+	float: left;
+	background-color: #f00;
+}
+.bb-color-picker-grad
+{
+	float: left;
+	width: 12px;
+	height: 100px;
+	margin-left: 8px;
+	background: -webkit-linear-gradient(#f00, #f0f, #00f, #0ff, #0f0, #ff0, #f00);
+	position: relative;
+	cursor: pointer;
+}
+.bb-color-picker-pointer1
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 6px;
+	height: 6px;
+	background: transparent;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin-top: -3px;
+	margin-left: -3px;
+}
+.bb-color-picker-pointer2
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 0px;
+	background: #f00;
+	margin-left: -2px;
+}
+.bb-color-rgb
+{
+	float: right;
+	width: 80px;
+	height: 100px;
+	text-align: right;
+}
+.bb-color-rgb-cell
+{
+	padding: 2px;
+}
+.bb-color-rgb-cell span
+{
+	display: inline-block;
+	margin-right: 5px;
+	color: #fff;
+	font-size: 12px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.color-cell
+{
+	width: 45px;
+	height: 19px;
+	font-size: 12px;
+	border: 0;
+	text-align: center;
+	background: rgb(22, 24, 31);
+	border-radius: 4px;
+	color: #fff;
+	box-shadow: 0 0 1px 1px rgb(0, 0, 0) inset;
+}
+.color-cell:focus
+{
+	outline: none;
+}
+.color-rgb
+{
+	width: 55px;
+}
+.bb-pre-color-btn
+{
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin: 1px;
+}
+.color-ff0000{background: #ff0000;}
+.color-ffff00{background: #ffff00;}
+.color-ff00ff{background: #ff00ff;}
+.color-00ffff{background: #00ffff;}
+.color-00ff00{background: #00ff00;}
+.color-0000ff{background: #0000ff;}
+.color-0080a2{background: #0080a2;}
+.color-8080a2{background: #8080a2;}
+.color-804040{background: #804040;}
+.color-ff8040{background: #ff8040;}
+.color-008080{background: #008080;}
+.color-004080{background: #004080;}
+.color-8080ff{background: #8080ff;}
+.color-800040{background: #800040;}
+.color-ff0080{background: #ff0080;}
+.color-800000{background: #800000;}
+.color-ff8000{background: #ff8000;}
+.color-008000{background: #008000;}
+.color-0000a0{background: #0000a0;}
+.color-800080{background: #800080;}
+.color-8000ff{background: #8000ff;}
+.color-400000{background: #400000;}
+.color-804000{background: #804000;}
+.color-004000{background: #004000;}
+.color-000080{background: #000080;}
+.color-000040{background: #000040;}
+.color-400040{background: #400040;}
+.color-400080{background: #400080;}
+.color-408080{background: #408080;}
+.color-ff8080{background: #ff8080;}
+.color-ffff80{background: #ffff80;}
+.color-80ff80{background: #80ff80;}
+.color-80ffff{background: #80ffff;}
+.color-0080ff{background: #0080ff;}
+.color-ff80c0{background: #ff80c0;}
+.color-ff80ff{background: #ff80ff;}
+
+.bb-background
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 99999;
+	display: none;
+}
+.bb-dialog
+{
+	background: #fff;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.bb-dialog.bb-html-editor
+{
+	position: absolute;
+	top: calc(50vh - 225px);
+	left: calc(50% - 300px);
+	width: 600px;
+	height: 450px;
+	margin: 0 auto;
+	box-sizing: border-box;
+    padding: 10px;
+}
+.bb-dialog-header
+{
+	position: relative;
+	overflow: hidden;
+	line-height: 30px;
+}
+.bb-find-editor .bb-dialog-header
+{
+	cursor: move;
+}
+.bb-dialog-title
+{
+	text-align: center;
+}
+.bb-dialog-close-btn
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+}
+.bb-dialog-content
+{
+	height: 350px;
+	margin-bottom: 15px;
+}
+.bb-dialog-content textarea
+{
+	background: #ddd;
+	width: 100%;
+	height: 350px;
+	padding: 0;
+	border: 0;
+	resize: none;
+}
+.bb-dialog-content textarea:focus
+{
+	outline: none;
+}
+.bb-dialog-buttons
+{
+	text-align: center;
+}
+.bb-dialog-button
+{
+	border: 0;
+	border-radius: 4px;
+	padding: 7px;
+	margin: 0 10px;
+	min-width: 50px;
+}
+.bb-dialog-button-ok
+{
+	background: rgb(249, 174, 100);
+	color: rgb(74, 89, 116);
+	font-weight: bold;
+}
+.bb-dialog-button-cancel
+{
+	background: rgb(74, 89, 116);
+	color: #fff;
+}
+.bb-dialog-button:focus
+{
+	outline: none;
+}
+.bb-dialog.bb-link-editor
+{
+	position: absolute;
+	top: calc(50vh - 100px);
+	left: calc(50% - 150px);
+	width: 300px;
+	height: 200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+    padding: 10px;
+}
+.bb-dialog.bb-link-editor .bb-dialog-content
+{
+	height: 100px;
+	margin-bottom: 15px;
+}
+.bb-dialog.bb-link-editor .bb-dialog-content input#bb-link-url
+{
+	width: 100%;
+	border: 0;
+	background: #eee;
+	height: 30px;
+    margin: 10px 0;
+}
+.bb-dialog.bb-link-editor .bb-dialog-content input#bb-link-url:focus
+{
+	outline: none;
+}
+.bb-dialog.bb-find-editor
+{
+	position: absolute;
+	top: calc(50vh - 100px);
+	left: calc(50% - 150px);
+	width: 300px;
+	height: 200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+    padding: 10px;
+}
+.bb-dialog.bb-find-editor .bb-dialog-content
+{
+	height: 100px;
+	margin-bottom: 15px;
+	font-size: 12px;
+}
+.bb-dialog.bb-find-editor .bb-dialog-content .bb-dialog-field-name
+{
+	width: 20%;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+}
+.bb-dialog.bb-find-editor .bb-dialog-content .bb-dialog-field-value
+{
+	width: 60%;
+	float: left;
+}
+.bb-dialog.bb-find-editor .bb-dialog-content .bb-dialog-field-value input
+{
+	width: 100%;
+	height: 30px;
+	background: #eee;
+	border: 0;
+	padding: 0;
+}
+.bb-dialog.bb-find-editor .bb-dialog-content .bb-dialog-field-value input:focus
+{
+	outline: none;
+}
+.bb-dialog.bb-find-editor .bb-dialog-content .bb-dialog-field-button
+{
+	width: 20%;
+	float: left;
+}
+.bb-dialog.bb-find-editor .bb-dialog-content .bb-dialog-field-button button
+{
+	width: 100%;
+	height: 30px;
+	background: rgb(251, 175, 93);
+	border-top: 1px solid rgb(251, 199, 141);
+	border-left: 1px solid rgb(251, 199, 141);
+	border-right: 1px solid rgb(204, 143, 76);
+	border-bottom: 1px solid rgb(204, 143, 76);
+	border-radius: 2px;
+	margin: 0;
+	padding: 0;
+}
+.bb-dialog.bb-find-editor .bb-dialog-content .bb-dialog-find-option
+{
+	padding: 10px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.bb-dialog.bb-find-editor .bb-dialog-content input#bb-find-str
+{
+	width: 100%;
+	border: 0;
+	background: #eee;
+	height: 30px;
+    margin: 0;
+}
+.bb-dialog.bb-table-editor
+{
+	position: absolute;
+	top: calc(50vh - 90px);
+	left: calc(50% - 150px);
+	width: 300px;
+	height: 180px;
+	margin: 0 auto;
+	box-sizing: border-box;
+    padding: 10px;
+}
+.bb-dialog.bb-table-editor .bb-dialog-content
+{
+	height: 60px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	text-align:center;
+}
+.bb-dialog.bb-table-editor .bb-dialog-content input#bb-table-rows,
+.bb-dialog.bb-table-editor .bb-dialog-content input#bb-table-columns
+{
+	width: 50px;
+	border: 0;
+	background: #eee;
+	height: 30px;
+    margin: 10px;
+}
+.bb-dialog.bb-table-editor .bb-dialog-content input#bb-table-rows:focus,
+.bb-dialog.bb-table-editor .bb-dialog-content input#bb-table-columns:focus
+{
+	outline: none;
+}
+.bbtooltip
+{
+	background: #eee;
+	border: 1px solid #333;
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+.bbEditorContent
+{
+	font-family: Open Sans;
+}
+.bbEditorContent ::selection {
+	background: #b5d6fd;
+/*	color: #000000;*/
+}

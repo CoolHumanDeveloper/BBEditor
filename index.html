@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<meta charset="utf-8">
+<media name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="bbEditor/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="bbEditor/bbEditor.css">
+<script src='jquery.min.js'></script>
+<script src='bbEditor/bbEditor.js'></script>
+<script>
+$(document).ready(function(){
+	$("#startEdit").on("click", function(){
+		$("#editor").bbEditor({'theme':'black'});
+	});
+	$("#endEdit").on("click", function(){
+		$("#editor").bbEditor('destroy');
+	});
+//	$("#editor1").bbEditor({'theme':'black'});
+	$("#editor2").bbEditor({'theme':'black'});
+});
+</script>
+<style>
+#editor1{
+	position: absolute;
+	top: 20px;
+	left: 100px;
+	height: 50px;
+	width: 600px;
+}
+#editor2{
+	position: absolute;
+	top: 150px;
+	left: 50px;
+	height: 200px;
+	width: 600px;
+}
+</style>
+
+<!--<link href='//fonts.googleapis.com/css?family=Alegreya+Sans:100normal,100italic,300normal,300italic,400normal,400italic,500normal,500italic,700normal,700italic,800normal,800italic,900normal,900italic|Open+Sans:400normal|Alegreya:400normal|Source+Sans+Pro:400normal|Oswald:400normal|Roboto+Slab:400normal|Arimo:400normal|Lora:400normal|Exo+2:400normal|PT+Sans:400normal|Vollkorn:400normal&subset=all' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Amaranth:400normal,400italic,700normal,700italic|Open+Sans:400normal|Lato:400normal|Roboto:400normal|Raleway:400normal|Droid+Sans:400normal|Oswald:400normal|Ubuntu:400normal|Arvo:400normal|Pacifico:400normal|Cabin:400normal&subset=all' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Ek+Mukta:200normal,300normal,400normal,500normal,600normal,700normal,800normal|Roboto:400normal|Open+Sans:400normal|Lato:400normal|Source+Sans+Pro:400normal|Raleway:400normal|Montserrat:400normal|Open+Sans+Condensed:300normal|Roboto+Condensed:400normal|Roboto+Slab:400normal|Libre+Baskerville:400normal&subset=all' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Raleway:100normal,100italic,200normal,200italic,300normal,300italic,400normal,400italic,500normal,500italic,600normal,600italic,700normal,700italic,800normal,800italic,900normal,900italic|Open+Sans:400normal|Roboto:400normal|Lato:400normal|Oswald:400normal|Droid+Serif:400normal|Droid+Sans:400normal|Lobster:400normal|Montserrat:400normal|PT+Sans:400normal|Lora:400normal&subset=all' rel='stylesheet' type='text/css'>-->
+</HEAD>
+<BODY>
+<!--<button id="startEdit" type="button">Start</button>
+<button id="endEdit" type="button">End</button>-->
+<!--<div id='editor1'>Edit <i>Your</i> Text!</div>-->
+<div id='editor2'><p>Edit <b><i>Your</i></b><i> Text</i>! Edit <b>Yo<i>ur</i></b><i> Text</i>!</p><p>Edit <b><i>Your</i></b><i> Text</i>! <a href="localhost">Edit</a> <b>Yo<i>ur</i></b><i> Text</i>!</p><table align=center border=1 cellspacing=0><tr><td>Edit</td><td>Edit</td><td>Edit</td></tr><tr><td>Edit</td><td>Edit</td><td>Edit</td></tr></table><p>Edit <b><i>Your</i></b><i> Text</i>! Edit <b>Yo<i>ur</i></b><i> Text</i>!</p></div>
+</BODY>
+</HTML>
